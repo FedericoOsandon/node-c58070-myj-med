@@ -1,0 +1,11 @@
+[
+  {
+    "first_name": "fede",
+    "last_name": "Osandón2",
+    "password": "123465",
+    "username": "fede123",
+    "id": 1,
+    "salt": "eqlLPUVXlB8CUX1HuZnZqzMdIbIwfUIQd1a7DW1aqWotGlxnx0AKXH3k8wZnnxzXcQuNNQ58waYyI1qbh/sDJR/AqBsO3wNh9Fzp1xnoNk4/Gzj+JNa16M4sfEbXubqPww+ZwXsaRK3hMfOUf8lc2uWcpMcVyyTb8SCTyFosKeo=",
+    "passwordHased": "823aa95540d9ffe277436f7374cf1966ab6dbaaa47812aa378f83fa1472b50e4"
+  }
+]
