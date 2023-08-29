@@ -24,6 +24,7 @@ class UserManager {
     async createUser(newUser){ // nombre apellido password username
         try {
             const users = await this.readUsers()
+            
             console.log(users)
             if (users.length === 0) {
                 newUser.id = 1
