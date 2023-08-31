@@ -1,0 +1,30 @@
+GET http://localhost:8080/bienvenido
+
+###
+GET http://localhost:8080/users
+###
+GET http://localhost:8080/params/11321
+
+###
+GET http://localhost:8080/users/federico/osandón
+
+
+###
+GET http://localhost:8080/
+
+###
+GET http://localhost:8080/1
+###
+GET http://localhost:8080/perritos 
+###
+POST http://localhost:8080/query 
+
+
+### 
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+    "first_name": "Federico",
+    "last_name": "Osandón"
+}
