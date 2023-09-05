@@ -1,0 +1,29 @@
+GET http://localhost:8080/api/users
+
+### 
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+    "first_name": "Federico",
+    "last_name": "Osandón"
+}
+
+
+### 
+PUT http://localhost:8080/api/users/2
+Content-Type: application/json
+
+{    
+   "first_name": "Federico new",
+    "last_name": "Osandón new"
+}
+
+### 
+DELETE http://localhost:8080/api/users/2
+
+### 
+GET http://localhost:8080/api/frase
+
+###
+GET http://localhost:8080/api/palabras/1
