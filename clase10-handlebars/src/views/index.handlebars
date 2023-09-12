@@ -1,0 +1,17 @@
+
+{{!-- body --}}
+<div>
+    <h1>¡Hola, {{ user.name }}!, ¡Que gusto verte!</h1>
+    {{#if isAdmin}}
+        {{#each fakeApi}}
+            <div>
+                <p>Nombre del producto: {{this.name}}</p>
+                <p>Precio: {{this.price}}</p>
+                {{!-- <p>{{}}</p> --}}
+            </div>
+        {{/each}}
+    {{else}}
+        <h2>Ud No tiene permisos necesarios para ver los productos</h2>
+    {{/if}}
+</div>
+<script src="/js/index.js"></script>
