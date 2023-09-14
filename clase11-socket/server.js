@@ -16,7 +16,8 @@ import viewsRouter from './routes/views.router.js'
 // const __dirname = dirname(__filename)
 
 // __ importación y configuración ____________________________________________________
-import { Server } from 'socket.io'
+import { Server as IOServer } from 'socket.io'
+import { Server as HTTPServer } from 'http'
 
 const app = express()
 // console.log(Server)
@@ -26,7 +27,7 @@ const httpServer = app.listen(PORT, ()=>{
     console.log(`Escuchando en el puerto ${PORT}`)
 })
 
-const socketServer = new Server(httpServer)
+const socketServer = new IOServer(httpServer)
 
 // ______________________________________________________
 
