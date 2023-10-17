@@ -1,0 +1,16 @@
+<div>Real time product</div>
+{{!-- pintar todos los productos --}}
+<div id="listProducts"></div>
+{{!-- mandar productos al servidor - api rest - socket emit--}}
+
+<form id="form-product" >
+    <input type="text" name="title" placeholder="nombre del producto">
+    <input type="text" name="description" placeholder="descripción del producto">
+    <input type="number" name="price" placeholder="precio del producto">
+    <input type="number" name="stock" placeholder="stock del producto">
+    <input type="text" name="code" placeholder="código del producto">
+    <input type="submit" >
+</form>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/realTimeProducts.js"></script>
