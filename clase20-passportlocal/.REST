@@ -1,0 +1,101 @@
+
+### ________________________________________________Sessions _______________________________________________________________
+POST http://localhost:8080/api/sessions/login 
+Content-Type: application/json
+
+{
+    "email": "fede@gmail.com",
+    "password": "123456"
+}
+### 
+GET http://localhost:8080/pruebas/logout 
+
+# ___________________________________________________ users _______________________________________________________
+
+GET http://localhost:8080/api/users
+
+### 
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+    "first_name": "Federico",
+    "last_name": "Osandón",
+    "email": "f1@gmail.com"
+}
+
+
+### 
+PUT http://localhost:8080/api/users/65130d0c645986ff5e751a2e
+Content-Type: application/json
+
+{    
+   "first_name": "Federico new",
+    "last_name": "Osandón new",
+    "email": "email de prueba"
+}
+
+### 
+DELETE http://localhost:8080/api/users/65130d0c645986ff5e751a2e
+
+### 
+GET http://localhost:8080/api/frase
+
+###
+GET http://localhost:8080/api/palabras/1
+
+
+
+// ______________________________________________________________productos _________________________________________________________ 
+### 
+GET http://localhost:8080/api/products?limit=10&page=1&order=-1
+
+### 
+GET http://localhost:8080/api/products/6526b4b4d791343d656164b4
+###
+POST http://localhost:8080/api/products 
+Content-Type: application/json
+
+{
+    "title": "prudcto prueba",
+    "description": "description proudct prueba",
+    "price": 1500,
+    "img": "ruta prueba",
+    "code": "007",
+    "stock": 1500,
+    "category": "gorras"
+}
+
+### 
+PUT http://localhost:8080/api/products/1
+Content-Type: application/json
+
+{
+    "title": "prudcto prueba",
+    "description": "description proudct prueba",
+    "price": 1500,
+    "img": "ruta prueba",
+    "code": "002",
+    "stock": 1500
+}
+
+### 
+DELETE http://localhost:8080/api/products/1
+
+
+_______________________________________________ CARTS ___________________________________________
+
+### 
+GET http://localhost:8080/api/carts/
+### 
+post http://localhost:8080/api/carts/
+### 
+GET http://localhost:8080/api/carts/651c3fe98e5062e4fb9090ec
+### 
+PUT http://localhost:8080/api/carts/651c3fe98e5062e4fb9090ec/products/652811b633c2bb355502b333
+Content-Type: application/json
+
+{
+    "quantity": 1
+}
+
