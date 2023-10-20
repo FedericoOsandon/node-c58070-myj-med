@@ -7,8 +7,8 @@ const userService = new UserManagerMongo()
 const inizializePassport = ( ) => {
     // middleware/estrategia
     passport.use('github', new GithubStrategy({
-        clientID: 'Iv1.1530904daf422807',
-        clientSecret: 'fc911a42ea59b040d1c059cb0c120822ada227df',
+        clientID: '',
+        clientSecret: '',
         callbackURL: 'http://localhost:8080/api/sessions/githubcallback'
     }, async (accessToken, refreshToken, profile, done)=> {
         // console.log('profile: ', profile)
