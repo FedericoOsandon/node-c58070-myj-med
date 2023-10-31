@@ -17,6 +17,7 @@ const initializePassport = () => {
                 let user = await userModel.findOne({email: email}) //( si tenemos el manager )
                 if (user) {
                     console.log('User ya existe')
+                    // autenticación fallida mensaje 
                     return done(null, false, {message: 'usuario ya existe'})
                 }
 

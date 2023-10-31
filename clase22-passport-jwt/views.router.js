@@ -13,7 +13,7 @@ const router = Router()
 // protejer con jwt passport
 // passport.authenticate('jwt', {session: false}) envolver en una función
 // router.get('/users', passport.authenticate('jwt', {session: false}), async (req, res) => {
-router.get('/users', passportCall('jwt'), authorization('user'), async (req, res) => {
+router.get('/users', passportCall('jwt'), authorization('admin'), async (req, res) => {
     try {
         const {numPage=1, limit=20, query=''} = req.query
         let {
