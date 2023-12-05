@@ -1,6 +1,7 @@
 // clase va a tener variables y métodos estáticos (que puedo usar sin instanciar la clase)
 
 const mongoose = require("mongoose");
+const { logger } = require("../../src/middleware/loggers");
 
 class MongoSingleton {
     static #instance 
@@ -18,7 +19,7 @@ class MongoSingleton {
             return this.#instance
         }
         this.#instance = new MongoSingleton(mongo_url)
-        console.log('Base de Datos creada')
+        logger.info('Base de Datos creada')
         this.#instance
     }
 }
