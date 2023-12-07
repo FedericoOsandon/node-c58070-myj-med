@@ -26,6 +26,7 @@ router.get('/sencilla', (req,res)=>{
     }
     res.send({sum})
 })
+
 router.get('/compleja', (req,res)=>{
     let sum = 0
     for (let i = 0; i < 5e8; i++) {
